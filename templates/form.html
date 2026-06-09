@@ -1,0 +1,58 @@
+
+{% extends "layoutstruct.html" %}
+{% block content %}
+
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Stress Predicter Form</h2>
+    <form method="POST" action="/form" class="card_c p-4 shadow-sm">
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Age</label>
+            <input type="number" name="age" min="1" max="100" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="1" required> Male<br>
+            <input type="radio" name="gender" value="0"> Female<br>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Choose platform for predicting stress</label><br>
+            <input type="radio" name="platform" value="0" required> facebook<br>
+            <input type="radio" name="platform" value="1"> instagram<br>
+            <input type="radio" name="platform" value="2"> Snapchat<br>
+            <input type="radio" name="platform" value="3"> whatsapp<br>
+            <input type="radio" name="platform" value="4"> youtube<br>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">How much time do you spend daily?</label><br>
+            <input type="radio" name="time_spent" value="1" required> 1 
+            <input type="radio" name="time_spent" value="2" required> 2 <br>
+            <input type="radio" name="time_spent" value="3" required> 3 
+            <input type="radio" name="time_spent" value="4" required> 4 <br>
+            <input type="radio" name="time_spent" value="5" required> 5 
+            <input type="radio" name="time_spent" value="6" required> 6 
+        </div>
+        <div class="mb-3">
+            <label class="form-label">How frequently do you open the app per day?</label><br>
+            <input type="radio" name="frequency" value="10" required> 10<br>
+            <input type="radio" name="frequency" value="15"> 15<br>
+            <input type="radio" name="frequency" value="20"> 20<br>
+            <input type="radio" name="frequency" value="25"> 25<br>
+            <input type="radio" name="frequency" value="30"> 30+<br>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">After Watching Reels how is your mood?</label><br>
+            <input type="radio" name="mood" value="0" required> Happy<br>
+            <input type="radio" name="mood" value="1"> Sad<br>
+            <input type="radio" name="mood" value="2"> Neutral<br>
+            <input type="radio" name="mood" value="3"> Very Sad<br>
+            <input type="radio" name="mood" value="4"> Anxious<br>
+        </div>
+        <button type="submit" name="action" value="predict" class="btn btn-primary w-100">Save and predict</button>
+    </form>
+</div>
+{% endblock %}

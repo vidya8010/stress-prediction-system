@@ -1,0 +1,1039 @@
+<<<<<<< HEAD
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('C:\Users\Admin\Desktop\Second_year\web development\webapp\static\img\bg.jpg');
+    color: #333;
+}
+
+header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 0.8rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-top: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #021430;
+}
+
+.home-section {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.home-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.button-container .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.button-container .btn:hover {
+    background-color: #0b5ed7;
+}
+
+.platform-section {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.platform-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.platform-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.platform-buttons .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.platform-buttons .btn:hover {
+    background-color: #0b5ed7;
+}
+.about-page{
+    padding: 80px;
+}
+.about-page h2{
+    background-color:  #0d6efd;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.about-page h4{
+    background-color:  #0d6efd;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.main-box-pred {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+/*login section*/
+.login-card {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background: white;
+}
+.select-container{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.title{
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:gray;
+    margin-bottom:40px;
+}
+
+.card-box{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    background:white;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:gray;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    color:white;
+}
+
+.card .user-btn{
+    background:#007bff;
+    color: aliceblue;
+}
+
+
+.card .admin-btn{
+    background:#28a745;
+    color: aliceblue;
+}
+
+
+/* Circle styling */
+.circle-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  transition: background 0.5s ease;
+}
+.form-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*platform page*/
+.platform-btn {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 16px;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .platform-btn:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+/* Label styling */
+.form-center label {
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Input fields */
+.form-center input[type="text"],
+.form-center input[type="password"] {
+  margin-top: 10px;
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-center input[type="text"]:focus,
+.form-center input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+/*.form-center button {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  width: 110px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-center button:hover {
+  background-color: #0056b3;
+}
+/* Text styling */
+.textcolor {
+  color:  green;
+  margin-top: 20px;
+  font-size: 28px;
+  font-style: italic;
+  font-family: cursive;
+}
+
+/* Button styling */
+.gobutton {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.gobutton a {
+  padding: 10px 20px;
+  background:  #0d6efd;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.gobutton a:hover {
+  background: #666;
+}footer {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    margin-top: 2rem;
+}
+/* 🌟 Tablet Devices (width ≤900px) */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .home-section {
+    padding: 2rem 1rem;
+  }
+
+  .home-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .home-section p {
+    font-size: 1rem;
+  }
+
+  .button-container .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .platform-section {
+    padding: 2rem 1rem;
+  }
+
+  .platform-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .platform-buttons {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .about-page {
+    padding: 40px;
+  }
+
+  .circle-container {
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .form-center input[type="text"],
+  .form-center input[type="password"] {
+    width: 220px;
+  }
+
+  .textcolor {
+    font-size: 24px;
+  }
+}
+
+/* 🌟 Mobile Devices (width ≤600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .home-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .home-section h1 {
+    font-size: 1.4rem;
+  }
+
+  .home-section p {
+    font-size: 0.95rem;
+  }
+
+  .button-container .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .platform-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .platform-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .platform-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about-page {
+    padding: 20px;
+  }
+
+  .about-page h2,
+  .about-page h4 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .circle-container {
+    width: 160px;
+    height: 160px;
+    font-size: 16px;
+  }
+
+  .form-center input[type="text"],
+  .form-center input[type="password"] {
+    width: 180px;
+  }
+
+  .textcolor {
+    font-size: 20px;
+  }
+
+  .gobutton a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* 🌟 Tablet Devices (width ≤900px) */
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-links {
+    gap: 0.75rem;
+    padding-top: 0.5rem;
+  }
+
+  .home-section {
+    padding: 2rem 1rem;
+  }
+
+  .home-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .home-section p {
+    font-size: 1rem;
+  }
+
+  .button-container .btn,
+  .platform-buttons .btn {
+    padding: 0.75rem 1.2rem;
+  }
+
+  .platform-section {
+    padding: 2rem 1rem;
+  }
+
+  .platform-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-page {
+    padding: 50px;
+  }
+
+  .circle-container {
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .form-center input[type="text"],
+  .form-center input[type="password"] {
+    width: 220px;
+  }
+
+  .textcolor {
+    font-size: 24px;
+  }
+}
+=======
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('C:\Users\Admin\Desktop\Second_year\web development\webapp\static\img\bg.jpg');
+    color: #333;
+}
+
+header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 0.8rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-top: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #021430;
+}
+
+.home-section {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.home-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.button-container .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.button-container .btn:hover {
+    background-color: #0b5ed7;
+}
+
+.platform-section {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.platform-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.platform-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.platform-buttons .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.platform-buttons .btn:hover {
+    background-color: #0b5ed7;
+}
+.about-page{
+    padding: 80px;
+}
+.about-page h2{
+    background-color:  #0d6efd;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.about-page h4{
+    background-color:  #0d6efd;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.main-box-pred {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+/*login section*/
+.login-card {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background: white;
+}
+.select-container{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.title{
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:gray;
+    margin-bottom:40px;
+}
+
+.card-box{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    background:white;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:gray;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    color:white;
+}
+
+.card .user-btn{
+    background:#007bff;
+    color: aliceblue;
+}
+
+
+.card .admin-btn{
+    background:#28a745;
+    color: aliceblue;
+}
+
+
+/* Circle styling */
+.circle-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  transition: background 0.5s ease;
+}
+.form-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*platform page*/
+.platform-btn {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 16px;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .platform-btn:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+/* Label styling */
+.form-center label {
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Input fields */
+.form-center input[type="text"],
+.form-center input[type="password"] {
+  margin-top: 10px;
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-center input[type="text"]:focus,
+.form-center input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+/*.form-center button {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  width: 110px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-center button:hover {
+  background-color: #0056b3;
+}
+/* Text styling */
+.textcolor {
+  color:  green;
+  margin-top: 20px;
+  font-size: 28px;
+  font-style: italic;
+  font-family: cursive;
+}
+
+/* Button styling */
+.gobutton {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.gobutton a {
+  padding: 10px 20px;
+  background:  #0d6efd;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.gobutton a:hover {
+  background: #666;
+}footer {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    margin-top: 2rem;
+}
+/* 🌟 Tablet Devices (width ≤900px) */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .home-section {
+    padding: 2rem 1rem;
+  }
+
+  .home-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .home-section p {
+    font-size: 1rem;
+  }
+
+  .button-container .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .platform-section {
+    padding: 2rem 1rem;
+  }
+
+  .platform-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .platform-buttons {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .about-page {
+    padding: 40px;
+  }
+
+  .circle-container {
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .form-center input[type="text"],
+  .form-center input[type="password"] {
+    width: 220px;
+  }
+
+  .textcolor {
+    font-size: 24px;
+  }
+}
+
+/* 🌟 Mobile Devices (width ≤600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .home-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .home-section h1 {
+    font-size: 1.4rem;
+  }
+
+  .home-section p {
+    font-size: 0.95rem;
+  }
+
+  .button-container .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .platform-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .platform-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .platform-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about-page {
+    padding: 20px;
+  }
+
+  .about-page h2,
+  .about-page h4 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .circle-container {
+    width: 160px;
+    height: 160px;
+    font-size: 16px;
+  }
+
+  .form-center input[type="text"],
+  .form-center input[type="password"] {
+    width: 180px;
+  }
+
+  .textcolor {
+    font-size: 20px;
+  }
+
+  .gobutton a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* 🌟 Tablet Devices (width ≤900px) */
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-links {
+    gap: 0.75rem;
+    padding-top: 0.5rem;
+  }
+
+  .home-section {
+    padding: 2rem 1rem;
+  }
+
+  .home-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .home-section p {
+    font-size: 1rem;
+  }
+
+  .button-container .btn,
+  .platform-buttons .btn {
+    padding: 0.75rem 1.2rem;
+  }
+
+  .platform-section {
+    padding: 2rem 1rem;
+  }
+
+  .platform-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-page {
+    padding: 50px;
+  }
+
+  .circle-container {
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .form-center input[type="text"],
+  .form-center input[type="password"] {
+    width: 220px;
+  }
+
+  .textcolor {
+    font-size: 24px;
+  }
+}
+>>>>>>> 4b1ebbc87824798c417faee0baa7f601b0d9ebe8

@@ -1,0 +1,39 @@
+{% extends "layoutstruct.html" %}
+
+{% block content %}
+<div class="about-page container" style="padding: 50px 20px; font-family: 'Poppins', sans-serif; color: #333;">
+    <h2 style="text-align: center; margin-bottom: 30px; font-size: 32px;">About This Project</h2>
+
+    <div class="card_c" style="padding: 20px; border-radius: 10px; background-color: #f8f9fa; margin-bottom: 30px;">
+        <p style="font-size: 16px;">
+            This project is developed to predict stress levels of users based on their social media usage patterns. It aims to create awareness about digital well-being and mental health.
+        </p>
+    </div>
+
+    <div class="card_c" style="padding: 20px; border-radius: 10px; background-color: #e3f2fd; margin-bottom: 30px;">
+        <h4><i class="fas fa-bullseye" style="margin-right: 10px;"></i> My Mission</h4>
+        <p>
+            To empower individuals by providing insights into how online behavior influences stress, and to promote balanced usage of social platforms.
+        </p>
+    </div>
+
+    <div class="card_c" style="padding: 20px; border-radius: 10px; background-color: #fff3cd; margin-bottom: 30px;">
+        <h4><i class="fas fa-laptop-code" style="margin-right: 10px;"></i> Technologies Used</h4>
+        <ul style="margin-left: 20px;">
+            <li>Python (scikit-learn, Pandas, NumPy)</li>
+            <li>Flask Web Framework</li>
+            <li>Bootstrap for Frontend Styling</li>
+        </ul>
+    </div>
+
+    <div class="card_c" style="padding: 20px; border-radius: 10px; background-color: #d1e7dd;">
+        <h4><i class="fas fa-envelope" style="margin-right: 10px;"></i> Contact</h4>
+        <p>
+            For queries, please email: <a href="mailto:help@stresspredictor.com">help@stresspredictor.com</a>
+        </p>
+    </div>
+</div>
+
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+{% endblock %}

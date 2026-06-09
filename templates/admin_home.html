@@ -1,0 +1,135 @@
+
+{% extends "base_admin_dashboard.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">Admin Dashboard 🛠</h2>
+
+<!-- Stats Cards -->
+<div class="row g-4">
+
+  <div class="col-md-3">
+    <div class="card-box text-center">
+      <h6>Total Users</h6>
+      <h2>{{ total_users }}</h2>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card-box text-center">
+      <h6>Active Users</h6>
+      <h2>{{ active_users }}</h2>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card-box text-center">
+      <h6>Reports</h6>
+      <h2>{{ reports }}</h2>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card-box text-center">
+      <h6>Average Time</h6>
+      <h2>{{ avg_time }} hrs</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Analytics Section -->
+<div class="row mt-4">
+
+  <!-- Chart -->
+  <div class="col-md-8">
+    <div class="card-box">
+      <h5>Platform Usage Overview</h5>
+
+      <div style="height:300px;">
+        <canvas id="platformChart"></canvas>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Most Used Platform -->
+  <div class="col-md-4">
+    <div class="card-box text-center">
+      <h5>Most Used Platform</h5>
+
+      <div class="mt-4">
+        <h2>{{ platform_name }}</h2>
+        <h4>{{ platform_count }} Users</h4>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Users Table -->
+<div class="table-responsive mt-4">
+  <table class="table table-hover table-bordered align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for user in users %}
+      <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+
+        <td>
+          {% if user.last_login %}
+            <span class="badge bg-success">Active</span>
+          {% else %}
+            <span class="badge bg-secondary">Inactive</span>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+  </table>
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const ctx = document.getElementById('platformChart');
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: {{ labels | tojson }},
+            datasets: [{
+                label: 'Number of Users',
+                data: {{ counts | tojson }},
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+});
+</script>
+{% endblock %}

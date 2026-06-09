@@ -1,0 +1,31 @@
+
+{% extends "layoutstruct.html" %}
+{% block content %}
+
+
+<div class="select-container">
+
+  <h1 class="title">Select Login Type</h1>
+  <p class="subtitle">Choose how you want to continue</p>
+
+  <div class="card-box">
+
+    <!-- USER LOGIN -->
+    <div class="card">
+      <h2>User</h2>
+      <p>Access stress prediction dashboard</p>
+      <a href="/user_login" class="btn user-btn">Login as User</a>
+    </div>
+
+    <!-- ADMIN LOGIN -->
+    <div class="card">
+      <h2>Admin</h2>
+      <p>Manage data and view reports to admin</p>
+      <a href="admin_login" class="btn admin-btn ">Login as Admin</a>
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

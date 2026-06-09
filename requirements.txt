@@ -1,0 +1,11 @@
+Flask==3.1.2
+Flask-SQLAlchemy
+SQLAlchemy
+PyMySQL
+gunicorn
+numpy
+pandas
+scikit-learn
+joblib
+python-dotenv
+Werkzeug

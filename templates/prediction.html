@@ -1,0 +1,52 @@
+
+{% extends "layoutstruct.html" %}
+{% block content %} 
+
+<div class="main-box-pred">
+  <div class="circle-container" id="circle">
+    <p id="stress-percent"><strong>Stress Percentage:</strong> {{ stress_percent }}%</p>
+  </div>
+  <div class="textcolor">
+    <p id="stress-text">Cool dude <br>You are in green zone</p>
+  </div>
+</div>
+
+<div class="gobutton">
+  <a href="/">Go Back Home</a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const stressLevel = Number({{ stress_percent | default(0) | tojson }});
+
+  const text = document.getElementById("stress-text");
+  const circle = document.getElementById("circle");
+  const percent = document.getElementById("stress-percent");
+
+  if (!text || !circle || !percent) {
+    console.error("Missing HTML elements");
+    return;
+  }
+
+  percent.textContent = "Stress Percentage: " + stressLevel + "%";
+
+  if (stressLevel <= 33) {
+    circle.style.background = "green";
+    text.style.color = "green";
+    text.innerHTML = "Cool dude<br>You are in green zone";
+  } 
+  else if (stressLevel <= 66) {
+    circle.style.background = "orange";
+    text.style.color = "orange";
+    text.innerHTML = "Be careful<br>You are in orange zone";
+  } 
+  else {
+    circle.style.background = "red";
+    text.style.color = "red";
+    text.innerHTML = "Warning!<br>You are in red zone";
+  }
+});
+</script>
+
+{% endblock %}

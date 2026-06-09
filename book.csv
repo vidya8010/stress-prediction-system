@@ -1,0 +1,170 @@
+<<<<<<< HEAD
+name,age,frequency,timespent,mood,stress,gender,platform
+anu,15,20,3,happy,2,male,WhatsApp
+siya,20,22,4,sad,7,female,Instagram
+krish,25,30,6,very sad,10,male,Instagram
+john,30,30,5,anxious,9,male,Instagram
+reva,35,25,4,sad,6,female,Facebook
+tanu,40,28,4,neutral,5,female,YouTube
+vidya,45,20,3,sad,6,female,Facebook
+priya,50,22,3,happy,3,female,WhatsApp
+pratik,55,15,2,happy,2,male,WhatsApp
+rajan,58,10,1,happy,1,male,WhatsApp
+amol,18,15,3,neutral,4,male,Snapchat
+kiran,28,25,5,sad,7,female,Snapchat
+minal,32,20,4,sad,7,female,Snapchat
+omkar,38,30,6,anxious,8,male,Facebook
+vikas,42,18,3,neutral,5,male,Snapchat
+geeta,48,12,2,happy,3,female,WhatsApp
+sanju,52,22,4,sad,6,male,YouTube
+pooja,26,28,5,very sad,9,female,Instagram
+yogesh,35,16,3,neutral,4,male,Snapchat
+sneha,40,20,4,sad,7,female,Facebook
+deepak,22,18,2,happy,3,male,WhatsApp
+neha,30,25,5,anxious,8,female,YouTube
+ravi,34,20,4,sad,6,male,Snapchat
+sakshi,36,24,4,neutral,5,female,Snapchat
+rahul,44,28,6,very sad,10,male,Instagram
+sheetal,50,15,2,happy,2,female,Facebook
+manoj,29,26,5,sad,7,male,Facebook
+shruti,31,20,3,neutral,4,female,Snapchat
+nikhil,27,18,2,happy,3,male,WhatsApp
+jyoti,23,19,3,sad,6,female,YouTube
+parag,33,30,6,very sad,9,male,Snapchat
+sonal,37,24,4,sad,6,female,Snapchat
+raj,41,22,3,neutral,5,male,Facebook
+divya,46,20,3,happy,3,female,WhatsApp
+anil,49,18,2,happy,2,male,WhatsApp
+vaishali,39,25,4,anxious,8,female,Instagram
+ishaan,43,30,5,very sad,10,male,Instagram
+meena,47,16,2,neutral,4,female,YouTube
+om,51,12,2,happy,2,male,WhatsApp
+kavya,19,22,4,sad,7,female,Snapchat
+sarthak,21,26,5,anxious,8,male,Instagram
+shreya,24,20,3,neutral,5,female,YouTube
+tej,27,30,6,very sad,9,male,Instagram
+nisha,30,18,2,happy,3,female,WhatsApp
+arjun,32,22,3,sad,6,male,Snapchat
+riya,34,24,4,sad,7,female,Snapchat
+sanket,36,26,5,neutral,5,male,Snapchat
+prerna,38,28,6,anxious,8,female,Facebook
+atul,45,15,3,happy,3,male,WhatsApp
+sana,48,18,2,sad,6,female,Snapchat
+amit,25,20,4,neutral,5,male,YouTube
+rutuja,27,22,3,happy,3,female,WhatsApp
+vishal,29,24,4,sad,6,male,Facebook
+aditi,31,26,5,anxious,8,female,Instagram
+rohit,33,28,6,very sad,9,male,Instagram
+tejas,35,30,5,neutral,5,male,Snapchat
+karan,37,20,3,happy,2,male,WhatsApp
+simran,39,22,4,sad,7,female,Facebook
+isha,41,24,5,anxious,8,female,Instagram
+omkar2,43,26,6,very sad,10,male,Instagram
+neel,45,18,3,happy,3,male,YouTube
+radhika,47,20,4,sad,6,female,Snapchat
+pankaj,49,22,5,neutral,5,male,Facebook
+tanvi,51,24,6,anxious,8,female,Instagram
+harsh,53,26,5,very sad,9,male,Instagram
+mohit,55,20,3,happy,2,male,WhatsApp
+anjali,22,18,2,sad,6,female,Snapchat
+kunal,24,20,3,neutral,5,male,YouTube
+pranav,26,22,4,happy,3,male,WhatsApp
+megha,28,24,5,sad,7,female,Facebook
+darshan,30,26,6,anxious,8,male,Instagram
+bhavana,32,28,5,very sad,10,female,Instagram
+naveen,34,20,3,happy,2,male,WhatsApp
+ritika,36,22,4,sad,6,female,Snapchat
+sahil,38,24,5,neutral,5,male,Facebook
+juhi,40,26,6,anxious,8,female,Instagram
+lokesh,42,28,5,very sad,9,male,Instagram
+swati,44,20,3,happy,3,female,WhatsApp
+akshay,46,22,4,sad,6,male,Snapchat
+poornima,48,24,5,neutral,5,female,YouTube
+rohan,50,26,6,anxious,8,male,Instagram
+preeti,52,28,5,very sad,10,female,Instagram
+=======
+name,age,frequency,timespent,mood,stress,gender,platform
+anu,15,20,3,happy,2,male,WhatsApp
+siya,20,22,4,sad,7,female,Instagram
+krish,25,30,6,very sad,10,male,Instagram
+john,30,30,5,anxious,9,male,Instagram
+reva,35,25,4,sad,6,female,Facebook
+tanu,40,28,4,neutral,5,female,YouTube
+vidya,45,20,3,sad,6,female,Facebook
+priya,50,22,3,happy,3,female,WhatsApp
+pratik,55,15,2,happy,2,male,WhatsApp
+rajan,58,10,1,happy,1,male,WhatsApp
+amol,18,15,3,neutral,4,male,Snapchat
+kiran,28,25,5,sad,7,female,Snapchat
+minal,32,20,4,sad,7,female,Snapchat
+omkar,38,30,6,anxious,8,male,Facebook
+vikas,42,18,3,neutral,5,male,Snapchat
+geeta,48,12,2,happy,3,female,WhatsApp
+sanju,52,22,4,sad,6,male,YouTube
+pooja,26,28,5,very sad,9,female,Instagram
+yogesh,35,16,3,neutral,4,male,Snapchat
+sneha,40,20,4,sad,7,female,Facebook
+deepak,22,18,2,happy,3,male,WhatsApp
+neha,30,25,5,anxious,8,female,YouTube
+ravi,34,20,4,sad,6,male,Snapchat
+sakshi,36,24,4,neutral,5,female,Snapchat
+rahul,44,28,6,very sad,10,male,Instagram
+sheetal,50,15,2,happy,2,female,Facebook
+manoj,29,26,5,sad,7,male,Facebook
+shruti,31,20,3,neutral,4,female,Snapchat
+nikhil,27,18,2,happy,3,male,WhatsApp
+jyoti,23,19,3,sad,6,female,YouTube
+parag,33,30,6,very sad,9,male,Snapchat
+sonal,37,24,4,sad,6,female,Snapchat
+raj,41,22,3,neutral,5,male,Facebook
+divya,46,20,3,happy,3,female,WhatsApp
+anil,49,18,2,happy,2,male,WhatsApp
+vaishali,39,25,4,anxious,8,female,Instagram
+ishaan,43,30,5,very sad,10,male,Instagram
+meena,47,16,2,neutral,4,female,YouTube
+om,51,12,2,happy,2,male,WhatsApp
+kavya,19,22,4,sad,7,female,Snapchat
+sarthak,21,26,5,anxious,8,male,Instagram
+shreya,24,20,3,neutral,5,female,YouTube
+tej,27,30,6,very sad,9,male,Instagram
+nisha,30,18,2,happy,3,female,WhatsApp
+arjun,32,22,3,sad,6,male,Snapchat
+riya,34,24,4,sad,7,female,Snapchat
+sanket,36,26,5,neutral,5,male,Snapchat
+prerna,38,28,6,anxious,8,female,Facebook
+atul,45,15,3,happy,3,male,WhatsApp
+sana,48,18,2,sad,6,female,Snapchat
+amit,25,20,4,neutral,5,male,YouTube
+rutuja,27,22,3,happy,3,female,WhatsApp
+vishal,29,24,4,sad,6,male,Facebook
+aditi,31,26,5,anxious,8,female,Instagram
+rohit,33,28,6,very sad,9,male,Instagram
+tejas,35,30,5,neutral,5,male,Snapchat
+karan,37,20,3,happy,2,male,WhatsApp
+simran,39,22,4,sad,7,female,Facebook
+isha,41,24,5,anxious,8,female,Instagram
+omkar2,43,26,6,very sad,10,male,Instagram
+neel,45,18,3,happy,3,male,YouTube
+radhika,47,20,4,sad,6,female,Snapchat
+pankaj,49,22,5,neutral,5,male,Facebook
+tanvi,51,24,6,anxious,8,female,Instagram
+harsh,53,26,5,very sad,9,male,Instagram
+mohit,55,20,3,happy,2,male,WhatsApp
+anjali,22,18,2,sad,6,female,Snapchat
+kunal,24,20,3,neutral,5,male,YouTube
+pranav,26,22,4,happy,3,male,WhatsApp
+megha,28,24,5,sad,7,female,Facebook
+darshan,30,26,6,anxious,8,male,Instagram
+bhavana,32,28,5,very sad,10,female,Instagram
+naveen,34,20,3,happy,2,male,WhatsApp
+ritika,36,22,4,sad,6,female,Snapchat
+sahil,38,24,5,neutral,5,male,Facebook
+juhi,40,26,6,anxious,8,female,Instagram
+lokesh,42,28,5,very sad,9,male,Instagram
+swati,44,20,3,happy,3,female,WhatsApp
+akshay,46,22,4,sad,6,male,Snapchat
+poornima,48,24,5,neutral,5,female,YouTube
+rohan,50,26,6,anxious,8,male,Instagram
+preeti,52,28,5,very sad,10,female,Instagram
+>>>>>>> 4b1ebbc87824798c417faee0baa7f601b0d9ebe8
+yash,54,20,3,happy,2,male,WhatsApp
