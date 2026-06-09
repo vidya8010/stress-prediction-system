@@ -10,7 +10,11 @@ import os
 app = Flask(__name__)
 
 app.secret_key = "a_very_secret_key_12345"  # <--- add this line
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project.db'
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+app.config['SQLALCHEMY_DATABASE_URI'] = \
+    'sqlite:///' + os.path.join(basedir, 'instance', 'project.db')
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
     "connect_args": {"check_same_thread": False}
@@ -42,9 +46,10 @@ class FormData(db.Model):
 
 class RegisterAdmin(db.Model):
     __tablename__ = 'register_admin'
+
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    name = db.Column(db.String(100))
-    email = db.Column(db.String(50), unique=True, nullable=False)
+    name = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(250), nullable=False)
     
 
