@@ -4,6 +4,7 @@ from werkzeug.security import generate_password_hash,check_password_hash
 import pickle
 from datetime import datetime,timedelta
 from sqlalchemy import func
+import os
 #Start 
 app = Flask(__name__)
 app.secret_key = "your_secret_key"
@@ -139,12 +140,12 @@ def forget_pass():
 
         if not user:
             flash("Email not registered!", "danger")
-            return redirect(url_for('forgot_pass'))
+            return redirect(url_for('forget_pass'))
 
         # Check password match
         if new_password != confirm_password:
             flash("Passwords do not match!", "danger")
-            return redirect(url_for('forgot_pass'))
+            return redirect(url_for('forget_pass'))
 
         # Hash new password
         hashed_password = generate_password_hash(new_password)
@@ -372,4 +373,5 @@ def admin_logout():
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
