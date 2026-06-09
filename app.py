@@ -13,7 +13,7 @@ app.secret_key = "a_very_secret_key_12345"  # <--- add this line
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app.config['SQLALCHEMY_DATABASE_URI'] = \
-    'sqlite:///' + os.path.join(basedir, 'instance', 'project.db')
+    'sqlite:///' + os.path.join(basedir, 'project.db')
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
