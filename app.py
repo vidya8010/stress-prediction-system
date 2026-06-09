@@ -5,14 +5,17 @@ import pickle
 from datetime import datetime,timedelta
 from sqlalchemy import func
 import os
+
 #Start 
 app = Flask(__name__)
-app.secret_key = "your_secret_key"
 
-#Mysql Configuration 
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:sp14%40vidya%23@localhost/stress_data'
+app.secret_key = "a_very_secret_key_12345"  # <--- add this line
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+    "connect_args": {"check_same_thread": False}
+}
+
 db = SQLAlchemy(app)
 
 #Tables
