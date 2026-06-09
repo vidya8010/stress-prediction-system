@@ -261,22 +261,39 @@ def admin_register():
 
 
 #Admin login
-@app.route('/admin_login',methods=["GET", "POST"])
+# @app.route('/admin_login',methods=["GET", "POST"])
+# def admin_login():
+#     if request.method == "POST":
+#         email = request.form["email"]
+#         password = request.form["password"]
+
+#         # Step 1: find user in SAME table
+#         user = RegisterAdmin.query.filter_by(email=email).first()
+
+#         # Step 2: check password
+#         if user and check_password_hash(user.password, password):
+#             session["user_id"] = user.id
+#             session["username"] = user.name
+#             return redirect('admin_home')
+#         else:
+#             flash("Invalid Credentials")
+#     return render_template('admin_login.html')
+
+@app.route('/admin_login', methods=["GET", "POST"])
 def admin_login():
     if request.method == "POST":
         email = request.form["email"]
         password = request.form["password"]
 
-        # Step 1: find user in SAME table
-        user = RegisterAdmin.query.filter_by(email=email).first()
+        admin = RegisterAdmin.query.filter_by(email=email).first()
 
-        # Step 2: check password
-        if user and check_password_hash(user.password, password):
-            session["user_id"] = user.id
-            session["username"] = user.name
-            return redirect('admin_home')
+        if admin and check_password_hash(admin.password, password):
+            session["admin_id"] = admin.id
+            session["admin_name"] = admin.name
+            return redirect(url_for('admin_home'))
         else:
             flash("Invalid Credentials")
+
     return render_template('admin_login.html')
 
 #Admin home
