@@ -1,0 +1,85 @@
+{% extends 'layoutstruct.html' %} 
+{% block content %}
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="card shadow-lg">
+        <div class="card-header text-center bg-success rounded-4 text-white">
+          <h4>Reset Your Password</h4>
+        </div>
+
+        <div class="card-body">
+          <!-- Flash Messages -->
+          {% with messages = get_flashed_messages(with_categories=true) %} {% if
+          messages %} {% for category, message in messages %}
+          <div
+            class="alert alert-{{ category }} alert-dismissible fade show"
+            role="alert"
+          >
+            {{ message }}
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+          </div>
+          {% endfor %} {% endif %} {% endwith %}
+
+          <form method="POST">
+            <!-- Email -->
+            <div class="mb-3">
+              <label class="form-label">Registered Email</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <!-- New Password -->
+            <div class="mb-3">
+              <label class="form-label">New Password</label>
+              <input
+                type="password"
+                name="new_password"
+                class="form-control"
+                placeholder="Enter new password"
+                required
+              />
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="mb-3">
+              <label class="form-label">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm_password"
+                class="form-control"
+                placeholder="Confirm new password"
+                required
+              />
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-success">
+                Reset Password
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="card-footer text-center">
+          <a href="/user_login" class="text-decoration-none">
+            Back to Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

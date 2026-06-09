@@ -125,6 +125,40 @@ def user_login():
             flash("Invalid Credentials")
 
     return render_template('user_login.html')
+
+#Forget passward
+@app.route('/forget_pass', methods=['GET', 'POST'])
+def forget_pass():
+    if request.method == 'POST':
+        email = request.form['email']
+        new_password = request.form['new_password']
+        confirm_password = request.form['confirm_password']
+
+        # Check if email exists
+        user = RegisterUser.query.filter_by(email=email).first()
+
+        if not user:
+            flash("Email not registered!", "danger")
+            return redirect(url_for('forgot_pass'))
+
+        # Check password match
+        if new_password != confirm_password:
+            flash("Passwords do not match!", "danger")
+            return redirect(url_for('forgot_pass'))
+
+        # Hash new password
+        hashed_password = generate_password_hash(new_password)
+
+        # Update password in database
+        user.password = hashed_password
+        db.session.commit()
+
+        flash("Password updated successfully! Please login.", "success")
+        return redirect(url_for('user_login'))
+
+    return render_template('forget_pass.html')
+
+
 #Starting after login 
 @app.route('/getstarted')
 def getstarted():
